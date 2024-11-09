@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="countaner">Factura de debito</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <div class="container">
+    <header>
+      <h1>Datos de la Facturacion y Secuencia de Facturacion:</h2>
+      <div class="Factura-info">
+        <label>Fecha de Facturacion:</label>
+        <input type="date">
+        <label>Tipo de Facturacion:</label>
+        <input type="radio" name="Tipo" value="Contado">Contado
+        <input type="radio" name="Tipo" value="Credito">Credito
+        <br>
+        <label>Con comprobante Fiscal?</label>
+        <input type="checkbox" name="si">
+        <input type="number" placeholder="Ingresa tu comprobante">
+     </div>
+
+     <hr> 
+
+     <div class="Cliente-info">
+      <label>Cliente Nombre</label>
+      <input type="text" placeholder="Escribe tu Nombre">
+
+      
+      <hr>
+
+    </div>
+  </header>
+
+ 
+
+   <section class="Detalles-Facturas">
+    <h2>Detalles de Facturas</h3>
+    <di class="Producto-input">
+      <label>Codigo:</label>
+      <input type="text">
+      <label>Nombre:</label>
+      <input type="text">
+      <label>Cantidad:</label>
+      <input type="number">
+      <label>Precio</label>
+      <input type="number">
+      <label>Aplicar ITBIS?</label>
+      <input type="checkbox" name="Correct">
+    </div>
+    <button id="add=product">Agregar producto</button>
+</section>
+<table>
+  <thead>
+    <try>
+      <th>CODIGO</th>
+      <th>NOMBRE</th>
+      <th>CANTIDAD</th>
+      <th>PRECIO</th>
+      <th>ITBIS?</th>
+      <th>MONTO ITBIS</th>
+      <th>TOTAL</th>
+      <th>REALIZADO POR</th>
+    </try>
+  </thead>
+  <tbody id="Factura-body">
+
+  </tbody>
+ </table>
+ <footer>
+    <button id="new-invoice">Nueva Factura</button>
+ </footer>
+</div>
+  <script src="main.js"></script>
+
+
+</body>
+</html>
